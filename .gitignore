@@ -62,3 +62,6 @@ typings/
 
 # temporales
 dist/
+
+.DS_Store
+/* .env
