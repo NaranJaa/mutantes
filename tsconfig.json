@@ -1,0 +1,16 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "rootDirs": ["dist/*"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [ "src/*"],
+      "@apiServices": ["apiServices/*"]
+    },
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  }
+}
