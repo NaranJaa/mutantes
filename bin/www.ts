@@ -13,7 +13,19 @@ import http from 'http';
 const debug = Debug('mutante:server');
 import { bootstrapLogger } from '@/utils/loggers';
 bootstrapLogger();
+import { initializeApp } from "firebase/app";
 
+const firebaseConfig = {
+  apiKey: "AIzaSyDrqjYBV6ZfGHjIbhNGoGFcuAWoLSQqOtM",
+  authDomain: "mutantes-10a24.firebaseapp.com",
+  projectId: "mutantes-10a24",
+  storageBucket: "mutantes-10a24.appspot.com",
+  messagingSenderId: "941419987508",
+  appId: "1:941419987508:web:875a070db140aac7de8061"
+};
+   // Initialize Firebase
+initializeApp(firebaseConfig);
+    
 /**
  * Get port from environment and store in Express.
  */
