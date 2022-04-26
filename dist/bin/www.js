@@ -15,17 +15,6 @@ const http_1 = __importDefault(require("http"));
 const debug = (0, debug_1.default)('mutante:server');
 const loggers_1 = require("@/utils/loggers");
 (0, loggers_1.bootstrapLogger)();
-const app_2 = require("firebase/app");
-const firebaseConfig = {
-    apiKey: "AIzaSyDrqjYBV6ZfGHjIbhNGoGFcuAWoLSQqOtM",
-    authDomain: "mutantes-10a24.firebaseapp.com",
-    projectId: "mutantes-10a24",
-    storageBucket: "mutantes-10a24.appspot.com",
-    messagingSenderId: "941419987508",
-    appId: "1:941419987508:web:875a070db140aac7de8061"
-};
-// Initialize Firebase
-(0, app_2.initializeApp)(firebaseConfig);
 /**
  * Get port from environment and store in Express.
  */

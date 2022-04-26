@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "export NODE_OPTIONS='--trace-deprecation --abort-on-uncaught-exception' && export NODE_ENV=development && nodemon --exec ts-node ./bin/www.ts",
-    "start": "node ./dist/bin/www.js",
-    "build": "sh etc/build.sh"
+    "start": "node dist/bin/www.js",
+    "build": "tsc"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -31,8 +31,8 @@
     "typescript": "^4.4.3"
   },
   "_moduleAliases": {
-    "@": "./src",
-    "@apiServices": "./apiServices"
+    "@": "dist/src",
+    "@apiServices": "dist/apiServices"
   },
   "engines": {
     "node":"16.x"
