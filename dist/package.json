@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "export NODE_OPTIONS='--trace-deprecation --abort-on-uncaught-exception' && export NODE_ENV=development && nodemon --exec ts-node ./bin/www.ts",
+    "dev": "export NODE_OPTIONS='--trace-deprecation --abort-on-uncaught-exception' && export NODE_ENV=development && nodemon --exec ts-node ./bin/www.ts",
+    "start": "node ./dist/bin/www.js",
     "build": "sh etc/build.sh"
   },
   "dependencies": {
@@ -34,6 +35,6 @@
     "@apiServices": "./apiServices"
   },
   "engines": {
-    "node":"14.x"
+    "node":"16.x"
   }
 }
