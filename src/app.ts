@@ -29,6 +29,3 @@ class App {
 }
 
 export default new App().app;
-// "sh etc/build.sh"
-
-// npm run build && node --inspect ./dist/bin/www.js
