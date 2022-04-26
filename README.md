@@ -14,7 +14,7 @@ Hay dos alternativas:
 
 - Utilizando postman o alguna otra herramienta para consumir api rest, probar:
 
-POST/ http://localhost:3500/api/mutant/isMutant
+POST/ http://localhost:3000/api/mutant/isMutant
 body json:
 ```
 {
